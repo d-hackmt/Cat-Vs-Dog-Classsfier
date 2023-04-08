@@ -1,0 +1,90 @@
+header {
+    background-color: #0edb30;
+    color: #0d0101;
+    display: flex;
+    font-family: Arial, sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+     
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin-right: 20px;
+  }
+  
+  nav a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 30px;
+  }
+  
+  
+  footer {
+    background-color: #0edb30;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 24px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    background-color: #fffcfc;
+  }
+  
+  .social-icons a:hover {
+    background-color: #e5e3e3;
+  }
+  
+  .social-icons a i {
+    margin: 0;
+    line-height: 1;
+  }
+  
+  .fa-linkedin {
+    font-size: 20px;
+  }
+  
+  .fa-github {
+    font-size: 20px;
+  }
+  
+  
+  p {
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.5;
+    margin-top: 20px;
+    text-align: justify;
+  }

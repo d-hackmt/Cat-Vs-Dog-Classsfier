@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>About</title>
+    <link rel = "stylesheet" href = "{{ url_for('static' , filename = 'css/style2.css') }}" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Dog vs Cat Classifier</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Model</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+	<main>
+    <h2>Name : Divesh Jadhwani</h2>
+    <h3>PRN : 20220804039</h3>
+    <section>
+      <h2>Project Overview:</h2>
+    <h3>The project involved the following steps:</h3>
+      <p>
+        <ul>
+          <li> Downloading and unzipping the Dogs vs Cats dataset from Kaggle.</li>
+          <li> Preprocessing the images by resizing them to a standard size and converting them to arrays.</li>
+          <li> Splitting the dataset into training and testing sets.</li>
+          <li> Loading the pre-trained MobileNetV2 model and adding custom layers on top to adapt the model for the cats vs dogs classification task.</li>
+          <li> Deploying the Model</li>
+        </ul> 
+      </p>     
+         
+    </section>  
+
+    <section>
+      <h2>Project Summary:</h2>
+      <p>This project is a demonstration of how deep learning can be used to classify images of dogs and cats. 
+        The model was trained on a dataset of thousands of images and can accurately classify new images as either dogs or cats.
+         The model was built using TensorFlow and Keras and is hosted as a web application using <u>Flask</u>. This project is a great example of the power of deep learning and its ability to solve complex problems with high accuracy.</p>
+    </section>
+    
+    <section>
+      <h2>Dataset:</h2>
+      <p>The Dogs vs Cats dataset from Kaggle was used, which contains thousands of images of cats and dogs.</p>
+    </section>
+    
+    <section>
+      <h2>Libraries Used:</h2>
+      <ul>
+        <li><b>ZipFile:</b> A Python library that provides tools for working with ZIP archives.</li>
+        <li><b>os:</b> A Python library that provides a way of using operating system dependent functionality.</li>
+        <li><b>NumPy:</b> A Python library for working with arrays and matrices of numerical data.</li>
+        <li><b>PIL:</b> A Python Imaging Library that adds support for opening, manipulating, and saving many different image file formats.</li>
+        <li><b>matplotlib:</b> A Python library for creating static, animated, and interactive visualizations in Python.</li>
+        <li><b>sklearn:</b> A Python library for machine learning tools, including model selection and evaluation, and data preprocessing.</li>
+        <li><b>cv2:</b> A Python library that provides tools for computer vision tasks, such as image and video processing.</li>
+        <li><b>glob:</b> A Python library that provides a way to search for files that match a specified pattern.</li>
+        <li><b>TensorFlow:</b> An open-source machine learning framework for building and training machine learning models.</li>
+        <li><b>Keras:</b> A high-level neural networks API, written in Python and capable of running on top of TensorFlow.</li>
+        <li><b>MobileNetV2:</b> A pre-trained deep learning model that is designed for mobile and embedded devices, with high accuracy and low computational requirements.</li>
+        <li><b>Sequential:</b> A Keras class that allows you to build a neural network model layer by layer, in a linear stack.</li>
+        <li><b>Dense:</b> A Keras layer that represents a fully connected neural network layer, where each neuron is connected to all neurons in the previous layer.</li>
+        <li><b>Adam:</b> An optimization algorithm for stochastic gradient descent, which adapts the learning rate based on the gradient of the loss function.</li>
+        <li><b>cv2_imshow:</b> A function provided by Google Colab that allows you to display images in a notebook.</li>
+      </ul>
+    </section>
+    
+    <section>
+      <h2>Transfer Learning:</h2>
+      <p>
+        Transfer learning is a technique in deep learning where a pre-trained model is used as the starting point for building a new model. 
+        The pre-trained model has already learned useful features from a large dataset, and the new model can use those features to improve its own performance on a smaller dataset.
+         This approach can save time and computational resources, and can often lead to better performance than training a model from scratch.
+      </p>        
+      </section> 
+      
+      <section>
+        <h2>Use Case:</h2>
+        <p>
+          In this project, transfer learning has been used to classify images of cats and dogs.
+The Dogs vs Cats dataset from Kaggle was used, which contains thousands of images of cats and dogs.
+The goal of the project was to build a model that could accurately classify these images as either cats or dogs.
+        </p>   
+      </section>   
+        
+      <footer>
+        <p><b>&copy; 2023 Dog vs Cat Classifier</b></p>
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/dhackmt"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/d-hackmt"><i class="fab fa-github"></i></a>
+        </div>
+      </footer>
+      
+	
+</body>
+</html>

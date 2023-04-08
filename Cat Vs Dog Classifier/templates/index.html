@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dog vs Cat Classifier</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='script/script.js') }}"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </head>
+  <body>
+    <header>
+      <h1>Dog vs Cat Classifier</h1>
+      <nav>
+        <ul>
+          <li><a href="{{ url_for('index') }}">Model</a></li>
+          <li><a href="{{ url_for('about') }}">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+
+    <div class="image-container">
+      {% if predicted_class %}
+        <img class="img-uploaded" src="data:image/jpg;base64,{{ image_data }}" alt="Uploaded Image">
+      {% else %}
+        <img src="{{ url_for('static', filename='css/bg.png') }}" alt="Dog and Cat Image">
+      {% endif %} 
+    </div>
+    
+
+    <main>
+      <section>
+        <h2>Model</h2>
+        <form action="{{ url_for('predict_image') }}" method="post" enctype="multipart/form-data" onsubmit="return validateForm()" id="prediction-form">
+          <label for="image-upload">Please choose an image with size less than 5 MB:</label><br>
+          <input type="file" id="image-upload" name="image" accept="image/*"><br>
+          <span id="image-error" class="error"></span>
+          <button type="submit">Predict</button>
+
+        </form>
+      </section>
+
+      <div id="prediction">
+        {% if predicted_class %}
+        <p> WOW! This is such an amazing picture of a <span id="predicted-class">{{ predicted_class }}</span> <i class="fas fa-heart"></i></p>
+        {% endif %}
+      </div>
+      
+      
+    </main>
+
+    <footer>
+      <p><b>&copy; 2023 Dog vs Cat Classifier</b></p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/dhackmt"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/d-hackmt"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
+
+  </body>
+</html>
