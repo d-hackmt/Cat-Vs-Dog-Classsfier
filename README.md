@@ -1,3 +1,7 @@
+
+![Dog vs Cat Classifier - Google Chrome 4_9_2023 2_56_00 AM](https://user-images.githubusercontent.com/113240252/230744010-cee18ae3-f339-4e2a-a015-1e4344079aaa.png)
+
+
 # Dogs vs Cats Image Classifier 🐶🐱
 
 ## Welcome to my Dogs vs Cats image classifier project! 🚀 In this project, I used the power of deep learning to build a model that can accurately classify images of cats 🐱 and dogs 🐶. I mean, who wouldn't want to know whether that furry creature in their photo is a cat or a dog? 🤔
@@ -21,3 +25,6 @@ The use case for this project is pretty straightforward: classify images of cats
 ## Conclusion 🎉
 
 In conclusion, this project was a great demonstration of the power of deep learning and its ability to solve complex problems with high accuracy. Plus, who doesn't love a good cat or dog photo? 🐶🐱 Thanks for checking out my project! 😊
+
+
+![Dog vs Cat Classifier - Google Chrome 4_9_2023 2_56_58 AM](https://user-images.githubusercontent.com/113240252/230744013-f9b861ec-f1ac-4f0e-9e87-26bc141f4dbb.png)
